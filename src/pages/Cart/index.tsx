@@ -22,7 +22,7 @@ const Cart = (): JSX.Element => {
 
   const cartFormatted = cart.map(product => ({
     ...product,
-    priceFormmated: formatPrice(product.id),
+    priceFormmated: formatPrice(product.price),
     subTotal: formatPrice(product.amount * product.price),
   }))
 
